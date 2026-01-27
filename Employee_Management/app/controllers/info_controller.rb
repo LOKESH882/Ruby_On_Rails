@@ -17,7 +17,6 @@ class InfoController < ApplicationController
       render json: @info, status: :created
     end
   end
-
   
   def update
     if @info.update(info_params)

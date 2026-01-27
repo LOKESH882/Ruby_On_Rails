@@ -26,7 +26,6 @@ class BooksController < ApplicationController
             render json: @book.errors, status: :unprocessable_entity
         end
     end
-    
     def destroy
         @book = Book.find(params[:id])
         @book.destroy

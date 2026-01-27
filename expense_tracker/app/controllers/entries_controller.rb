@@ -23,7 +23,7 @@ class EntriesController < ApplicationController
   def update
     if @entry.update(entry_params)
       render json: @entry
-    else
+    else     
       render json: @entry.errors, status: :unprocessable_entity
     end
   end
