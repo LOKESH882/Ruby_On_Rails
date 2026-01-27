@@ -1,0 +1,5 @@
+class AddColumnToStudent < ActiveRecord::Migration[8.1]
+  def change
+    add_column :students, :date_of_birth, :date
+  end
+end
